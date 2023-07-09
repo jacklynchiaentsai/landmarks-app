@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+// main identifies app's entry point
 @main
-struct LandmarksApp: App {
+struct LandmarksApp: App { // structure that conforms to the App protocol
+    // structure's body property returns one or more scneces for display
     var body: some Scene {
         WindowGroup {
             ContentView()
