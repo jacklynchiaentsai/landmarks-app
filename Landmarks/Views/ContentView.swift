@@ -14,6 +14,7 @@
     -> by default stacks center their contents along their axis
  - spaced expands to make its containing view use all of the space of its parent view
  - can move shared features of the same stack as a modifier of the stack
+ - using .json files to store data to dynamically populate views
  */
 //
 
