@@ -10,18 +10,38 @@
  2) conform data type to Identifiable protocol
  - set navigation capacbilities to a list by embedding it in a NavifationView, and then nesting each row in a NavigationLink
  - when the elements of array are simple value types use \.self as key path to the identifier
+ - state is a value or a set of values that affect's a view's behavior
+ - use a property with @State attribute to add state to a view
+ - binding acts as a reference to a mutable state
+ - to combine static and dynamic views in a list or to combine two or more different groups of dynamic groups use foreach instead of passing to list
+ - use $ prefix to access a binding to a state variable or one of its properties
  */
 
 import SwiftUI
 
 struct LandmarkList: View {
+    // always create state as private
+    @State private var showFavoritesOnly = false
+    
+    var filteredLandmarks: [Landmark] {
+        landmarks.filter{ landmark in (!showFavoritesOnly || landmark.isFavorite)
+            
+        }
+    }
+    
     var body: some View {
         NavigationView {
-            List (landmarks){ landmark in
-                NavigationLink{
-                    LandmarkDetail(landmark: landmark)
-                } label: {
-                    LandmarkRow(landmark: landmark)
+            List {
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites Only")
+                }
+                ForEach(filteredLandmarks){
+                    landmark in
+                    NavigationLink{
+                        LandmarkDetail(landmark: landmark)
+                    } label: {
+                        LandmarkRow(landmark: landmark)
+                    }
                 }
                 
             }

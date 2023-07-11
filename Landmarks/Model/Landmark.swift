@@ -11,6 +11,7 @@ import CoreLocation
 
 // define landmark structure with properties matching names of keys in the .json file
 // codable: makes easier to move data between structure and data file
+// codable: read the value associated with the key by creating a new property with the same name as the key
 // the landmark data has the id property required by the Identifiable protocol
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
@@ -18,6 +19,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     
     private var imageName: String //read image name from data
     // image property that loads image from asset

@@ -10,6 +10,7 @@
  - Use a group to return multiple previews from a preview provider
  - group is a container for grouping view content
  - the code you write in preview provider only changes what XCode displays in the canvas
+ - system images are vector based can modify their styles
  */
 import SwiftUI
 
@@ -22,6 +23,11 @@ struct LandmarkRow: View {
                 .frame(width: 50, height:50)
             Text(landmark.name)
             Spacer()
+            // use if statement to conditionally include views
+            if landmark.isFavorite{
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
