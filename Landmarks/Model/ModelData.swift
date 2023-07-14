@@ -17,6 +17,8 @@ import Combine
 final class ModelData: ObservableObject{
     // create arraty of landmarks initialzed from .json file
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    // won;t modify hike data after initially loading it so don't need to mark it with Published
+    var hikes: [Hike] = load("hikeData.json")
 }
 
 
