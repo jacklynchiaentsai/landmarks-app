@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    // need access to the environment's model data
+    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
+    
+    // compute the index of the input landmark by comparing it with the model data
+    var landmarkIndex: Int{
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
     
     var body: some View {
         ScrollView {
@@ -19,9 +26,14 @@ struct LandmarkDetail: View {
                 .offset(y: -130) // layer over map view
                 .padding(.bottom, -130)
             VStack (alignment: .leading){
-                Text(landmark.name)
-                    .font(.title)
-                    .foregroundColor(.black)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                    // binding o the isFavorite property
+                    // use landmarkIndex with modelData object to ensure that the button  updtaes the isFavorite property of the landmark stored in model object
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
+                    
                 HStack {
                     Text(landmark.park)
                     Spacer()
@@ -45,6 +57,6 @@ struct LandmarkDetail: View {
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail(landmark: landmarks[0])
+        LandmarkDetail(landmark: ModelData().landmarks[0])
     }
 }

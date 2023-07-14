@@ -15,16 +15,19 @@
  - binding acts as a reference to a mutable state
  - to combine static and dynamic views in a list or to combine two or more different groups of dynamic groups use foreach instead of passing to list
  - use $ prefix to access a binding to a state variable or one of its properties
+ - both the detail and list view access the same model object in the environment so the two views maintain consistency
  */
 
 import SwiftUI
 
 struct LandmarkList: View {
+    // modekData property gets its value automatically as long as the envrionment Object modifier has been applied to a parent
+    @EnvironmentObject var modelData: ModelData
     // always create state as private
     @State private var showFavoritesOnly = false
     
     var filteredLandmarks: [Landmark] {
-        landmarks.filter{ landmark in (!showFavoritesOnly || landmark.isFavorite)
+        modelData.landmarks.filter{ landmark in (!showFavoritesOnly || landmark.isFavorite)
             
         }
     }
@@ -61,6 +64,7 @@ struct LandmarkList_Previews: PreviewProvider {
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 // add device name as labels for the previews
                 .previewDisplayName(deviceName)
+                .environmentObject(ModelData())
         }
     }
 }

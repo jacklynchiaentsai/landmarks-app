@@ -33,6 +33,8 @@ struct LandmarkRow: View {
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    static var landmarks = ModelData().landmarks
+    
     static var previews: some View {
         // LandmarkRow ntype needs a landmark instnace during initialization
         Group{
