@@ -1,13 +1,12 @@
-//
-//  Hike.swift
-//  Landmarks
-//
-//  Created by Jacklyn Tsai on 7/14/23.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A representation of a hike.
+*/
 
 import Foundation
 
-// codable: match the keys in the corresponding data file
 struct Hike: Codable, Hashable, Identifiable {
     var id: Int
     var name: String
@@ -15,19 +14,15 @@ struct Hike: Codable, Hashable, Identifiable {
     var difficulty: Int
     var observations: [Observation]
 
-
     static var formatter = LengthFormatter()
-
 
     var distanceText: String {
         Hike.formatter
             .string(fromValue: distance, unit: .kilometer)
     }
 
-
     struct Observation: Codable, Hashable {
         var distanceFromStart: Double
-
 
         var elevation: Range<Double>
         var pace: Range<Double>

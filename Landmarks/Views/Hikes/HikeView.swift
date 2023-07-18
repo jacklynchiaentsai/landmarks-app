@@ -3,11 +3,18 @@ See LICENSE folder for this sample’s licensing information.
 
 Abstract:
 A view displaying information about a hike, including an elevation graph.
- 
- - When you use the animation(_:) modifier on an equatable view, SwiftUI animates any changes to animatable properties of the view. A view’s color, opacity, rotation, size, and other properties are all animatable. When the view isn’t equatable, you can use the animation(_:value:) modifier to start animations when the specified value changes.
 */
 
 import SwiftUI
+
+extension AnyTransition {
+    static var moveAndFade: AnyTransition {
+        .asymmetric(
+            insertion: .move(edge: .trailing).combined(with: .opacity),
+            removal: .scale.combined(with: .opacity)
+        )
+    }
+}
 
 struct HikeView: View {
     var hike: Hike
@@ -28,7 +35,9 @@ struct HikeView: View {
                 Spacer()
 
                 Button {
-                    showDetail.toggle()
+                    withAnimation {
+                        showDetail.toggle()
+                    }
                 } label: {
                     Label("Graph", systemImage: "chevron.right.circle")
                         .labelStyle(.iconOnly)
@@ -36,12 +45,12 @@ struct HikeView: View {
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
                         .scaleEffect(showDetail ? 1.5 : 1)
                         .padding()
-
                 }
             }
 
             if showDetail {
                 HikeDetail(hike: hike)
+                    .transition(.moveAndFade)
             }
         }
     }
