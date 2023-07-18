@@ -19,6 +19,19 @@ final class ModelData: ObservableObject{
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     // won;t modify hike data after initially loading it so don't need to mark it with Published
     var hikes: [Hike] = load("hikeData.json")
+    
+    // array that only contains the featured landmarks
+    var features: [Landmark]{
+        landmarks.filter {$0.isFeatured}
+    }
+    
+    // categories dictionary with category names as keys and an array of associated landmarks
+    var categories: [String: [Landmark]]{
+        Dictionary(
+            grouping: landmarks,
+            by: { $0.category.rawValue}
+        )
+    }
 }
 
 
