@@ -27,6 +27,10 @@ struct Landmark: Hashable, Codable, Identifiable {
         case lakes = "Lakes"
         case rivers = "Rivers"
         case mountains = "Mountains"
+        case arts = "Arts / Performances"
+        case food = "Foods"
+        case sites = "Sites"
+        case entertainment = "Entertainment"
     }
     
     private var imageName: String //read image name from data

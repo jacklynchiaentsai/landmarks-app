@@ -27,6 +27,7 @@ struct CategoryHome: View {
             }
             .listStyle(.inset)
                 .navigationTitle("NYC Spots 🗽")
+                /*
                 .toolbar{
                     Button{
                         showingProfile.toggle()
@@ -34,6 +35,7 @@ struct CategoryHome: View {
                         Label("User Profile", systemImage: "person.crop.circle")
                     }
                 }
+                 */
                 .sheet(isPresented: $showingProfile){
                     ProfileHost()
                         .environmentObject(modelData)
