@@ -19,7 +19,7 @@ struct CategoryItem: View {
                 .cornerRadius(5)
             Text(landmark.name)
                 .foregroundColor(.primary)
-                .padding(.leading, 15)
+                .padding(.leading, 5)
         }
     }
 }
