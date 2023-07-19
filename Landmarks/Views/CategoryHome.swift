@@ -15,12 +15,9 @@ struct CategoryHome: View {
         // this view showcases one or more featured landmarks at the top
         NavigationView {
             List{
-                // temporary featured landmark display
-                modelData.features[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height:200)
-                    .clipped()
+                PageView(pages: modelData.features.map{FeatureCard(landmark: $0)})
+                    .aspectRatio(3/2, contentMode: .fit)
+                    .listRowInsets(EdgeInsets())
                     // content can extend to the edges of the display
                     .listRowInsets(EdgeInsets())
                 ForEach(modelData.categories.keys.sorted(), id: \.self){
@@ -29,7 +26,7 @@ struct CategoryHome: View {
                 }.listRowInsets(EdgeInsets())
             }
             .listStyle(.inset)
-                .navigationTitle("Featured")
+                .navigationTitle("NYC Spots 🗽")
                 .toolbar{
                     Button{
                         showingProfile.toggle()
