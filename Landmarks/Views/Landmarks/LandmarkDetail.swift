@@ -27,7 +27,7 @@ struct LandmarkDetail: View {
                 .padding(.bottom, -130)
             VStack (alignment: .leading){
                 HStack {
-                    Text(landmark.name)
+                    Text(landmark.full_name)
                         .font(.title)
                     // binding o the isFavorite property
                     // use landmarkIndex with modelData object to ensure that the button  updtaes the isFavorite property of the landmark stored in model object
@@ -35,9 +35,10 @@ struct LandmarkDetail: View {
                 }
                     
                 HStack {
-                    Text(landmark.park)
+                    Text(landmark.address)
                     Spacer()
-                    Text(landmark.state)
+                    Image(systemName: "star.circle.fill")
+                    Text("\(String(format: "%.1f", landmark.rating)) / 5")
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)

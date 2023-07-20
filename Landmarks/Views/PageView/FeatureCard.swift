@@ -32,7 +32,7 @@ struct TextOverlay: View{
                 Text(landmark.name)
                     .font(.title)
                     .bold()
-                Text(landmark.park)
+                Text(landmark.address)
             }
             .padding()
         }

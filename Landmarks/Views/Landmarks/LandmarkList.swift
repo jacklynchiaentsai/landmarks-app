@@ -49,7 +49,7 @@ struct LandmarkList: View {
                 
             }
             // setting the title of the navigation bar when displaying the list
-            .navigationTitle("Landmarks")
+            .navigationTitle("NYC List 🗽")
             
         }
 

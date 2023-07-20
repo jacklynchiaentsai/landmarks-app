@@ -1,195 +1,291 @@
 [
-    {
-        "name": "Sleep No More",
-        "category": "Arts / Performances",
-        "city": "Twentynine Palms",
-        "state": "Manhattan",
-        "id": 1001,
-        "isFeatured": true,
-        "isFavorite": true,
-        "park": "530 W 27th St",
-        "coordinates": {
-
-            "longitude": 40.750700,
-            "latitude": -74.003918
-        },
-        "description": "Sleep No More tells Shakespeare’s classic tragedy Macbeth through a immersive theatrical lens, offering an audience experience unlike anything else on the New York scene. Audiences move freely through the epic story of Macbeth, creating their own journeys through a film noir world.",
-        "imageName": "sleepnomore"
+  {
+    "name": "Sleep No More",
+    "full_name": "Sleep No More",
+    "category": "Arts / Performances",
+    "district": "Manhattan",
+    "id": 1001,
+    "isFeatured": true,
+    "isFavorite": false,
+    "rating": 4.7,
+    "address": "530 W 27th St, New York, NY",
+    "coordinates": {
+      "longitude": -74.006609,
+      "latitude": 40.749904
+    },
+    "description": "Sleep No More is an immersive and interactive theater experience that takes place in the McKittrick Hotel. Audience members can explore various rooms, following actors and experiencing a unique, mysterious storyline.",
+    "imageName": "sleepnomore"
+  },
+  {
+    "name": "Wicked",
+    "full_name": "Wicked (Musical)",
+    "category": "Arts / Performances",
+    "district": "Manhattan",
+    "id": 1002,
+    "isFeatured": true,
+    "isFavorite": true,
+    "rating": 4.8,
+    "address": "222 W 51st St, New York, NY",
+    "coordinates": {
+      "longitude": -73.985664,
+      "latitude": 40.763380
+    },
+    "description": "Wicked is a hugely popular Broadway musical, based on the novel 'Wicked: The Life and Times of the Wicked Witch of the West'. It offers a captivating story and impressive performances that make it a must-see for theater enthusiasts.",
+    "imageName": "wicked"
+  },
+  {
+    "name": "MET Museum",
+    "full_name": "Metropolitan Museum of Art",
+    "category": "Arts / Performances",
+    "district": "Manhattan",
+    "id": 1003,
+    "isFeatured": false,
+    "isFavorite": true,
+    "rating": 4.9,
+    "address": "1000 5th Ave, New York, NY",
+    "coordinates": {
+      "longitude": -73.963153,
+      "latitude": 40.779438
+    },
+    "description": "The MET Museum is one of the largest and most prestigious art museums in the world. It houses an extensive collection of art from various cultures and periods, making it a paradise for art lovers.",
+    "imageName": "metmuseum"
+  },
+  {
+    "name": "Hex & Co",
+    "full_name": "Hex & Co Board Game Cafe",
+    "category": "Entertainment",
+    "district": "Manhattan",
+    "id": 1004,
+    "isFeatured": true,
+    "isFavorite": true,
+    "rating": 4.6,
+    "address": "2871 Broadway, New York, NY",
+    "coordinates": {
+      "longitude": -73.966757,
+      "latitude": 40.805834
+    },
+    "description": "Hex & Co is a popular board game cafe where visitors can enjoy a wide selection of board games while savoring delicious food and drinks. It's a perfect spot for friends and families to have a fun and entertaining time together.",
+    "imageName": "hexandco"
+  },
+  {
+    "name": "Wollman Rink",
+    "full_name": "Wollman Rink",
+    "category": "Entertainment",
+    "district": "Manhattan",
+    "id": 1005,
+    "isFeatured": true,
+    "isFavorite": false,
+    "rating": 4.5,
+    "address": "Central Park, New York, NY",
+    "coordinates": {
+      "longitude": -73.974939,
+      "latitude": 40.767667
+    },
+    "description": "Wollman Rink is an iconic ice-skating rink located in Central Park. During winter, it offers a delightful ice-skating experience with a picturesque view of the park's surroundings.",
+    "imageName": "wollmanrink"
+  },
+  {
+    "name": "Grace Street",
+    "full_name": "Grace Street",
+    "category": "Foods",
+    "district": "Manhattan",
+    "id": 1006,
+    "isFeatured": false,
+    "isFavorite": false,
+    "rating": 4.4,
+    "address": "17 W 32nd St, New York, NY",
+    "coordinates": {
+      "longitude": -73.987701,
+      "latitude": 40.747814
+    },
+    "description": "Grace Street is a cozy cafe specializing in Korean-inspired desserts and beverages. It offers a wide range of bingsu (shaved ice) and other sweet treats that are perfect for satisfying your dessert cravings.",
+    "imageName": "gracestreet"
+  },
+  {
+    "name": "Central Park",
+    "full_name": "Central Park",
+    "category": "Sites",
+    "district": "Manhattan",
+    "id": 1007,
+    "isFeatured": true,
+    "isFavorite": true,
+    "rating": 4.9,
+    "address": "Central Park, New York, NY",
+    "coordinates": {
+      "longitude": -73.965355,
+      "latitude": 40.782865
+    },
+    "description": "Central Park is a renowned urban park in Manhattan, New York City. It offers a beautiful landscape, recreational activities, and cultural events, making it a cherished spot for both locals and tourists alike.",
+    "imageName": "centralpark"
+  },
+  {
+    "name": "Brooklyn Botanical",
+    "full_name": "Brooklyn Botanical Garden",
+    "category": "Sites",
+    "district": "Brooklyn",
+    "id": 1008,
+    "isFeatured": true,
+    "isFavorite": false,
+    "rating": 4.8,
+    "address": "990 Washington Ave, Brooklyn, NY",
+    "coordinates": {
+      "longitude": -73.962309,
+      "latitude": 40.668326
+    },
+    "description": "The Brooklyn Botanical Garden is a stunning oasis of natural beauty in the heart of Brooklyn. It features a diverse collection of plants and flowers, enchanting visitors with its serene and picturesque settings.",
+    "imageName": "brooklynbotanicalgarden"
+  },
+  {
+    "name": "High Line",
+    "full_name": "The High Line",
+    "category": "Sites",
+    "district": "Manhattan",
+    "id": 1009,
+    "isFeatured": true,
+    "isFavorite": true,
+    "rating": 4.7,
+    "address": "820 Washington St, New York, NY",
+    "coordinates": {
+      "longitude": -74.005955,
+      "latitude": 40.748817
+    },
+    "description": "The High Line is a unique public park built on an old elevated railway track. It offers a refreshing escape from the city's hustle and bustle with beautifully landscaped gardens, art installations, and scenic views.",
+    "imageName": "highline"
+  },
+  {
+    "name": "Columbia University",
+    "full_name": "Columbia University",
+    "category": "Sites",
+    "district": "Manhattan",
+    "id": 1010,
+    "isFeatured": false,
+    "isFavorite": false,
+    "rating": 4.6,
+    "address": "116th St & Broadway, New York, NY",
+    "coordinates": {
+      "longitude": -73.961647,
+      "latitude": 40.807535
+    },
+    "description": "Columbia University is an esteemed Ivy League institution, known for its academic excellence and historic campus. It offers a blend of educational opportunities and cultural diversity in the bustling city of New York.",
+    "imageName": "columbiauniversity"
+  },
+  {
+    "name": "9/11 Tribute Museum",
+    "full_name": "9/11 Tribute Museum",
+    "category": "Sites",
+    "district": "Manhattan",
+    "id": 1011,
+    "isFeatured": false,
+    "isFavorite": false,
+    "rating": 4.8,
+    "address": "92 Greenwich St, New York, NY",
+    "coordinates": {
+      "longitude": -74.012428,
+      "latitude": 40.709189
+    },
+    "description": "The 9/11 Tribute Museum offers a poignant and educational experience, sharing personal stories and artifacts related to the tragic events of September 11, 2001. It serves as a tribute to the victims, survivors, and heroes of that day.",
+    "imageName": "911tributemuseum"
+  },
+  {
+    "name": "Grand Central",
+    "full_name": "Grand Central Terminal",
+    "category": "Sites",
+    "district": "Manhattan",
+    "id": 1012,
+    "isFeatured": false,
+    "isFavorite": true,
+    "rating": 4.9,
+    "address": "89 E 42nd St, New York, NY",
+    "coordinates": {
+      "longitude": -73.977622,
+      "latitude": 40.752726
+    },
+    "description": "Grand Central Terminal is a historic transportation hub in Midtown Manhattan. With its stunning architecture and vibrant atmosphere, it offers more than just a transit point; it's a destination in itself.",
+    "imageName": "grandcentral"
+  },
+  {
+      "name": "Thai Market",
+      "full_name": "Thai Market",
+      "category": "Foods",
+      "district": "Manhattan",
+      "id": 1013,
+      "isFeatured": true,
+      "isFavorite": false,
+      "rating": 4.5,
+      "address": "960 Amsterdam Ave, New York, NY",
+      "coordinates": {
+        "longitude": -73.967629,
+        "latitude": 40.800710
+      },
+      "description": "Thai Market offers an authentic and delightful Thai dining experience. With its flavorful dishes, friendly ambiance, and prompt service, it has become a go-to spot for Thai cuisine enthusiasts in Manhattan.",
+      "imageName": "thaimarket"
     },
     {
-        "name": "Wicked",
-        "category": "Arts / Performances",
-        "city": "Port Alsworth",
-        "state": "Manhattan",
-        "id": 1002,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "1000 5th Ave",
-        "coordinates": {
-            "longitude": 40.77959093085339,
-            "latitude": -73.96334056266508
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "wicked"
+      "name": "The Ellington",
+      "full_name": "The Ellington",
+      "category": "Foods",
+      "district": "Manhattan",
+      "id": 1014,
+      "isFeatured": true,
+      "isFavorite": true,
+      "rating": 4.7,
+      "address": "936 Amsterdam Ave, New York, NY",
+      "coordinates": {
+        "longitude": -73.967515,
+        "latitude": 40.800994
+      },
+      "description": "The Ellington is a charming jazz club that pays homage to the legendary Duke Ellington. With its soulful music, cozy setting, and talented musicians, it's a must-visit destination for jazz lovers in the city.",
+      "imageName": "theellington"
     },
     {
-        "name": "MET Museum",
-        "category": "Arts / Performances",
-        "city": "Skagway",
-        "state": "Manhattan",
-        "id": 1003,
-        "isFeatured": false,
-        "isFavorite": true,
-        "park": "1000 5th Ave",
-        "coordinates": {
-            "longitude": 40.77962342752346,
-            "latitude": -73.96323327434668
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "met"
+      "name": "Nan Xiang 小籠包",
+      "full_name": "Nan Xiang Xiao Long Bao",
+      "category": "Foods",
+      "district": "Queens",
+      "id": 1015,
+      "isFeatured": true,
+      "isFavorite": true,
+      "rating": 4.8,
+      "address": "38-12 Prince St, Flushing, NY",
+      "coordinates": {
+        "longitude": -73.832700,
+        "latitude": 40.759635
+      },
+      "description": "Nan Xiang Xiao Long Bao is a renowned restaurant in Flushing, Queens, famous for its delicious and authentic Shanghai-style soup dumplings. Food enthusiasts from all over the city come to indulge in these flavorful delights.",
+      "imageName": "nanxiangxiaolongbao"
     },
     {
-        "name": "Grace Street",
-        "category": "Foods",
-        "city": "Browning",
-        "state": "Montana",
-        "id": 1004,
-        "isFeatured": true,
-        "isFavorite": true,
-        "park": "Glacier National Park",
-        "coordinates": {
-            "longitude": -113.536248,
-            "latitude": 48.69423
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "grace"
+      "name": "Wuish Kitchen & Bar",
+      "full_name": "Wuish Kitchen & Bar",
+      "category": "Foods",
+      "district": "Brooklyn",
+      "id": 1016,
+      "isFeatured": false,
+      "isFavorite": false,
+      "rating": 4.6,
+      "address": "295 Smith St, Brooklyn, NY",
+      "coordinates": {
+        "longitude": -73.990788,
+        "latitude": 40.682113
+      },
+      "description": "Wuish Kitchen & Bar offers a contemporary take on traditional Taiwanese cuisine. With its creative dishes, trendy ambiance, and friendly staff, it has become a popular spot for foodies exploring the culinary scene in Brooklyn.",
+      "imageName": "wuishkitchenbar"
     },
     {
-        "name": "Central Park",
-        "category": "Sites",
-        "city": "Twin Lakes",
-        "state": "Alaska",
-        "id": 1005,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Lake Clark National Park and Preserve",
-        "coordinates": {
-            "longitude": -153.849883,
-            "latitude": 60.641684
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "centralpark"
-    },
-    {
-        "name": "Hex & Co",
-        "category": "Entertainment",
-        "city": "West Glacier",
-        "state": "Montana",
-        "id": 1006,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Glacier National Park",
-        "coordinates": {
-            "longitude": -113.934831,
-            "latitude": 48.56002
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "hexco"
-    },
-    {
-        "name": "Brooklyn Botanical",
-        "category": "Sites",
-        "city": "Eaking",
-        "state": "Alaska",
-        "id": 1007,
-        "isFeatured": true,
-        "isFavorite": false,
-        "park": "Charley Rivers National Preserve",
-        "coordinates": {
-            "longitude": -143.122586,
-            "latitude": 65.350021
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "brooklynbotanical"
-    },
-    {
-        "name": "High Line",
-        "category": "Sites",
-        "city": "Icy Bay",
-        "state": "Alaska",
-        "id": 1008,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Wrangell-St. Elias National Park and Preserve",
-        "coordinates": {
-            "longitude": -141.518167,
-            "latitude": 60.089917
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "highline"
-    },
-    {
-        "name": "Columbia University",
-        "category": "Sites",
-        "city": "Willow",
-        "state": "Alaska",
-        "id": 1009,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "State Recreation Area",
-        "coordinates": {
-            "longitude": -150.086103,
-            "latitude": 61.694334
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "columbia"
-    },
-    {
-        "name": "9/11 Tribute Museum",
-        "category": "Sites",
-        "city": "Newhalem",
-        "state": "Washington",
-        "id": 1010,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "North Cascades National Park",
-        "coordinates": {
-            "longitude": -121.17799,
-            "latitude": 48.495442
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "911museum"
-    },
-    {
-        "name": "Grand Central",
-        "category": "Sites",
-        "city": "Chincoteague",
-        "state": "Virginia",
-        "id": 1011,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Chincoteague National Wildlife Refuge",
-        "coordinates": {
-            "longitude": -75.383212,
-            "latitude": 37.91531
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "grandcentral"
-    },
-    {
-        "name": "Wollman Rink",
-        "category": "Entertainment",
-        "city": "Errol",
-        "state": "New Hampshire",
-        "id": 1012,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Umbagog National Wildlife Refuge",
-        "coordinates": {
-            "longitude": -71.056816,
-            "latitude": 44.747408
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "wollman"
+      "name": "Ho Foods",
+      "full_name": "Ho Foods",
+      "category": "Foods",
+      "district": "Manhattan",
+      "id": 1017,
+      "isFeatured": true,
+      "isFavorite": true,
+      "rating": 4.9,
+      "address": "110 E 7th St, New York, NY",
+      "coordinates": {
+        "longitude": -73.987822,
+        "latitude": 40.725682
+      },
+      "description": "Ho Foods is a cozy and inviting eatery specializing in Taiwanese beef noodle soup, a comfort food loved by many. Their dedication to quality ingredients and authentic flavors makes them a favorite among noodle enthusiasts.",
+      "imageName": "hofoods"
     }
 ]

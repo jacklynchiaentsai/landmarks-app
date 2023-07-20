@@ -16,17 +16,17 @@ import CoreLocation
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
-    var park: String
-    var state: String
+    var full_name: String
+    
     var description: String
+    var address: String
+    var district: String
     var isFavorite: Bool
     var isFeatured: Bool // already exists in the data
+    var rating: Float
     
     var category: Category
     enum Category: String, CaseIterable, Codable {
-        case lakes = "Lakes"
-        case rivers = "Rivers"
-        case mountains = "Mountains"
         case arts = "Arts / Performances"
         case food = "Foods"
         case sites = "Sites"
